@@ -117,39 +117,24 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"css.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var string = "\n  .skin * {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n  }\n  .skin *::before,\n    .skin *::after {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n  }\n \n  .skin {\n    position: relative;\n    background: #ffe600;\n    height: 100vh;\n  }\n  .nose {\n\n  }\n  @keyframes wave {\n    0% {\n      transform: rotate(0deg);\n    }\n    33% {\n      transform: rotate(5deg);\n    }\n    66% {\n      transform: rotate(-5deg);\n    }\n    100% {\n      transform: rotate(0deg);\n    }\n  }\n  \n  .san:hover {\n    transform-origin: center bottom;\n    animation: wave 200ms infinite linear;\n  }\n  .san {\n    border: 10px solid red;\n    border-color: black transparent transparent;\n    border-bottom: none;\n    position: absolute;\n    width: 0px;\n    height: 0px;\n    left: 50%;\n    top: 180px;\n    margin-left: -10px;\n  }\n  .yuan {\n    position: absolute;\n    width: 20px;\n    height: 6px;\n    top: -16px;\n    left: -10px;\n    border-radius: 10px 10px 0 0;\n    background: black;\n  }\n  .eye {\n    border: 2px solid black;\n    width: 62px;\n    height: 62px;\n    position: absolute;\n    left: 50%;\n    top: 140px;\n    transform: translateX(-50%);\n    border-radius: 50%;\n    background: #2e2e2e;\n  }\n  .eye::before {\n    content: \"\";\n    display: block;\n    border: 2px solid black;\n    width: 30px;\n    height: 30px;\n    border-radius: 50%;\n    position: absolute;\n    left: 8px;\n    background: #fff;\n  }\n  .left {\n    margin-left: -130px;\n  }\n  .right {\n    margin-left: 130px;\n  }\n  .upMouth {\n    width: 200px;\n    height: 30px;\n    position: absolute;\n    left: 50%;\n    margin-left: -100px;\n    top: 210px;\n    overflow: hidden;\n    z-index: 1;\n  }\n  \n  .mouth .upMouth .lipLeft {\n    border: 3px solid black;\n    width: 90px;\n    height: 40px;\n    border-radius: 0 0 0 50px;\n    border-color: transparent transparent transparent black;\n    transform: rotate(-22deg);\n    position: absolute;\n    top: -19px;\n    left: 9px;\n    background: #ffe600;\n  }\n  \n  .mouth .upMouth .lipRight {\n    border: 3px solid black;\n    width: 90px;\n    height: 40px;\n    border-radius: 0 0 50px 0;\n    border-color: transparent black transparent transparent;\n    transform: rotate(22deg);\n    position: absolute;\n    top: -19px;\n    right: 9px;\n    background: #ffe600;\n    z-index: 1;\n  }\n  .mouth .upMouth .content {\n    content: \"\";\n    display: block;\n    border: 2px solid black;\n    width: 0px;\n    height: 0px;\n    background: black;\n    position: absolute;\n    left: 50%;\n    margin-left: -2.82px;\n    top: 1px;\n    z-index: 2;\n  }\n  .mouth .downMouth {\n    width: 200px;\n    height: 180px;\n    position: absolute;\n    left: 50%;\n    margin-left: -100px;\n    top: 210px;\n    overflow: hidden;\n  }\n  .mouth .downMouth .yuan1 {\n    border: 3px solid black;\n    height: 1000px;\n    width: 200px;\n    position: absolute;\n    left: 50%;\n    margin-left: -100px;\n    bottom: 0;\n    border-radius: 100px / 500px;\n    background: #9b000a;\n    overflow: hidden;\n  }\n  .mouth .downMouth .yuan1 .yuan2 {\n    background: #ff485f;\n    width: 200px;\n    height: 200px;\n    position: absolute;\n    left: -3px;\n    bottom: -56px;\n    border-radius: 50%;\n  }\n  .face {\n    border: 3px solid black;\n    width: 88px;\n    height: 88px;\n    position: absolute;\n    left: 50%;\n    margin-left: -44px;\n    top: 250px;\n    border-radius: 50%;\n    background: #ff0000;\n    z-index: 3;\n  }\n  .face.left {\n    transform: translateX(-185px);\n  }\n  .face.right {\n    transform: translateX(185px);\n  }\n  .face > img {\n    position: absolute;\n    left: 50%;\n    top: 50%;\n  }\n  .face.left > img {\n    transform: rotateY(180deg);\n    transform-origin: 0 0;\n  }\n\n";
-var _default = string;
-exports.default = _default;
-},{}],"test.js":[function(require,module,exports) {
-"use strict";
-
-var _css = _interopRequireDefault(require("./css.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
+})({"test.js":[function(require,module,exports) {
+var string = "\n  .skin * {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n  }\n  .skin *::before,\n    .skin *::after {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n  }\n  .skin {\n    position: relative;\n    background: #ffe600;\n    height: 100vh;\n  }\n  .nose {\n  }\n  @keyframes wave {\n    0% {\n      transform: rotate(0deg);\n    }\n    33% {\n      transform: rotate(5deg);\n    }\n    66% {\n      transform: rotate(-5deg);\n    }\n    100% {\n      transform: rotate(0deg);\n    }\n  }\n  .san:hover {\n    transform-origin: center bottom;\n    animation: wave 200ms infinite linear;\n  }\n  .san {\n    border: 10px solid red;\n    border-color: black transparent transparent;\n    border-bottom: none;\n    position: absolute;\n    width: 0px;\n    height: 0px;\n    left: 50%;\n    top: 180px;\n    margin-left: -10px;\n  }\n  .yuan {\n    position: absolute;\n    width: 20px;\n    height: 6px;\n    top: -16px;\n    left: -10px;\n    border-radius: 10px 10px 0 0;\n    background: black;\n  }\n  .eye {\n    border: 2px solid black;\n    width: 62px;\n    height: 62px;\n    position: absolute;\n    left: 50%;\n    top: 140px;\n    transform: translateX(-50%);\n    border-radius: 50%;\n    background: #2e2e2e;\n  }\n  .eye::before {\n    content: \"\";\n    display: block;\n    border: 2px solid black;\n    width: 30px;\n    height: 30px;\n    border-radius: 50%;\n    position: absolute;\n    left: 8px;\n    background: #fff;\n  }\n  .left {\n    margin-left: -130px;\n  }\n  .right {\n    margin-left: 130px;\n  }\n  .upMouth {\n    width: 200px;\n    height: 30px;\n    position: absolute;\n    left: 50%;\n    margin-left: -100px;\n    top: 210px;\n    overflow: hidden;\n    z-index: 1;\n  }\n  \n  .mouth .upMouth .lipLeft {\n    border: 3px solid black;\n    width: 90px;\n    height: 40px;\n    border-radius: 0 0 0 50px;\n    border-color: transparent transparent transparent black;\n    transform: rotate(-22deg);\n    position: absolute;\n    top: -19px;\n    left: 9px;\n    background: #ffe600;\n  }\n  .mouth .upMouth .lipRight {\n    border: 3px solid black;\n    width: 90px;\n    height: 40px;\n    border-radius: 0 0 50px 0;\n    border-color: transparent black transparent transparent;\n    transform: rotate(22deg);\n    position: absolute;\n    top: -19px;\n    right: 9px;\n    background: #ffe600;\n    z-index: 1;\n  }\n  .mouth .upMouth .content {\n    content: \"\";\n    display: block;\n    border: 2px solid black;\n    width: 0px;\n    height: 0px;\n    background: black;\n    position: absolute;\n    left: 50%;\n    margin-left: -2.82px;\n    top: 1px;\n    z-index: 2;\n  }\n  .mouth .downMouth {\n    width: 200px;\n    height: 180px;\n    position: absolute;\n    left: 50%;\n    margin-left: -100px;\n    top: 210px;\n    overflow: hidden;\n  }\n  .mouth .downMouth .yuan1 {\n    border: 3px solid black;\n    height: 1000px;\n    width: 200px;\n    position: absolute;\n    left: 50%;\n    margin-left: -100px;\n    bottom: 0;\n    border-radius: 100px / 500px;\n    background: #9b000a;\n    overflow: hidden;\n  }\n  .mouth .downMouth .yuan1 .yuan2 {\n    background: #ff485f;\n    width: 200px;\n    height: 200px;\n    position: absolute;\n    left: -3px;\n    bottom: -56px;\n    border-radius: 50%;\n  }\n  .face {\n    border: 3px solid black;\n    width: 88px;\n    height: 88px;\n    position: absolute;\n    left: 50%;\n    margin-left: -44px;\n    top: 250px;\n    border-radius: 50%;\n    background: #ff0000;\n    z-index: 3;\n  }\n  .face.left {\n    transform: translateX(-185px);\n  }\n  .face.right {\n    transform: translateX(185px);\n  }\n  .face > img {\n    position: absolute;\n    left: 50%;\n    top: 50%;\n  }\n  .face.left > img {\n    transform: rotateY(180deg);\n    transform-origin: 0 0;\n  }\n\n";
 var n = 1;
 var demo = document.querySelector("#demo");
 var demo2 = document.querySelector("#demo2");
-demo.innerText = _css.default.substr(0, n);
-demo2.innerHTML = _css.default.substr(0, n);
+demo.innerText = string.substr(0, n);
+demo2.innerHTML = string.substr(0, n);
 
 var run = function run() {
   n += 1;
 
-  if (n > _css.default.length) {
+  if (n > string.length) {
     window.clearInterval(st);
     return;
   }
 
-  demo.innerText = _css.default.substr(0, n);
-  demo2.innerHTML = _css.default.substr(0, n);
+  demo.innerText = string.substr(0, n);
+  demo2.innerHTML = string.substr(0, n);
   demo.scrollTop = demo.scrollHeight;
 };
 
@@ -189,7 +174,7 @@ document.querySelector("#btnFast").onclick = function () {
   time = 0;
   st = play();
 };
-},{"./css.js":"css.js"}],"C:/Users/binghao/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"C:/Users/binghao/AppData/Local/Yarn/Data/global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

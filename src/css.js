@@ -10,14 +10,12 @@ const string = `
     padding: 0;
     box-sizing: border-box;
   }
- 
   .skin {
     position: relative;
     background: #ffe600;
     height: 100vh;
   }
   .nose {
-
   }
   @keyframes wave {
     0% {
@@ -33,7 +31,6 @@ const string = `
       transform: rotate(0deg);
     }
   }
-  
   .san:hover {
     transform-origin: center bottom;
     animation: wave 200ms infinite linear;
@@ -109,7 +106,6 @@ const string = `
     left: 9px;
     background: #ffe600;
   }
-  
   .mouth .upMouth .lipRight {
     border: 3px solid black;
     width: 90px;
